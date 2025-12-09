@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Mobile Friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page Title -->
+    <title>Intelli-Schedule | AI-Powered NEP-2020 Timetable Generator</title>
+
+    <!-- Project Description -->
+    <meta
+      name="description"
+      content="Intelli-Schedule is an AI-powered academic timetable generator aligned with NEP-2020. Designed to automate college scheduling, remove conflicts, optimize faculty & room utilization, and provide smart dashboards."
+    />
+
+    <!-- Keyword SEO -->
+    <meta
+      name="keywords"
+      content="AI Timetable Generator, NEP 2020 Scheduling, College Timetable Automation, SIH25091, Smart India Hackathon Timetable, University Scheduling Software, Intelli-Schedule"
+    />
+
+    <!-- Robots / Google indexing -->
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Author -->
+    <meta name="author" content="Intelli-Schedule Project (SIH25091)" />
+
+    <!-- Favicon (Calendar Icon + Auto Color Animation) -->
+    <script>
+      (function () {
+        try {
+          const canvas = document.createElement("canvas");
+          canvas.width = canvas.height = 64;
+          const ctx = canvas.getContext("2d");
+          const link = document.querySelector("link[rel~='icon']") || document.createElement("link");
+          link.rel = "icon";
+          document.head.appendChild(link);
+
+          let hue = 200;
+
+          function draw() {
+            if (!ctx) return;
+            ctx.clearRect(0, 0, 64, 64);
+
+            ctx.fillStyle = `hsl(${hue}, 90%, 55%)`;
+            ctx.fillRect(0, 0, 64, 64);
+
+            ctx.fillStyle = "white";
+            ctx.font = "38px sans-serif";
+            ctx.textAlign = "center";
+            ctx.textBaseline = "middle";
+            ctx.fillText("📅", 32, 36);
+
+            link.href = canvas.toDataURL("image/png");
+            hue = (hue + 2) % 360;
+          }
+
+          draw();
+          setInterval(draw, 3000);
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="/" />
+
+    <!-- Social Sharing Preview -->
+    <meta property="og:title" content="Intelli-Schedule • AI Timetable Generator" />
+    <meta
+      property="og:description"
+      content="AI-powered NEP-2020 compliant timetable generation for universities and colleges. Create conflict-free smart timetables effortlessly."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/cover.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0f172a" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- Main App -->
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
