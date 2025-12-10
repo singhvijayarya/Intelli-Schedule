@@ -15,6 +15,10 @@ Team Members - Sandeep Kumar, Vansh Arora, Vatsal Negi, Shiv Mishra, Anjali
 Mentor 1 - Dr. Shalini Ninoria
 Mentor 2 - Dr. Prof R.K. Dwivedi
 
+
+🧠 Intelli-Schedule APK:
+APK LINK :- https://drive.google.com/file/d/1bPy4tk8zNXXBq6nNER-rTjs2GLHYshtI/view?usp=sharing
+
 🧠 Intelli-Schedule
 AI-Powered Automated Timetable Generator for NEP-2020 Programs
 
@@ -215,3 +219,4 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: Setting up a custom domain
+
